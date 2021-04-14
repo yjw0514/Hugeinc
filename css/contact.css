@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+
+.gnb_logo_wrap {
+    width: 74px;
+    height: 74px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 50px;
+    left: calc(50% - 37px);
+}
+
+.gnb_logo {
+    width: 24px;
+    height: 28px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero_wrap {
+    width: 100%;
+    height: 80vh;
+    background-image: url(../img/hero.jpg);
+}
+
+#hero_title {
+    position: absolute;
+    bottom: 240px;
+    left: 250px;    
+    font-size: 160px;
+    font-weight: 700;
+    letter-spacing: -10px;
+}
+
+/* Hello */
+#hello {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.hello_wrap {
+    width: 1440px;
+    padding: 100px 10px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.hello_left {
+    width: 33.3333%;
+}
+
+.hello_left_index {
+    width: 200px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    border-top: 1px solid rgb(255,255,255);
+    padding: 14px 0 0;
+}
+
+.hello_right {
+    width: 66.6666%;
+}
+
+.hello_right_title {
+    width: 600px;
+    font-size: 56px;
+    font-family: serif;
+    line-height: 70px;
+    letter-spacing: -2px;
+    margin: 0 0 46px;
+}
+
+.hello_right_box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hello_right_box_item {
+    width: calc(50% - 10px);
+    height: 240px;
+    margin: 100px 0 0;
+    padding: 0 10px 0 0;
+}
+
+.hello_right_box_title,
+.hello_right_box_call,
+.hello_right_box_email {
+    font-family: serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 34px;
+    color: rgb(255, 255, 255);
+}
+
+.hello_right_box_title {
+margin-bottom: 40px;
+}
+
+
+/* Talk  */
+#talk {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.talk_wrap {
+    width: 1440px;
+    padding: 100px 10px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.talk_left {
+    width: 33.3333%;
+}
+
+.talk_left_index {
+    width: 200px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    border-top: 1px solid rgb(0, 0, 0);
+    padding: 14px 0 0;
+}
+
+.talk_right {
+    width: 66.6666%;
+}
+
+.talk_right_title {
+    width: 100%;
+    font-size: 56px;
+    font-family: serif;
+    line-height: 70px;
+    letter-spacing: -2px;
+    margin: 0 0 46px;
+}
+
+/* .talk_name_eyebrow,
+.talk_email_eyebrow,
+.talk_company_eyebrow,
+.talk_message_eyebrow {
+    display:none;
+    color: #3a97f5;
+    font-size: 14px;
+    font-weight: 400;
+} */
+
+#talk_form {
+    width: 100%;
+}
+
+.talk_input_wrap {
+    margin: 0 0 48px;
+}
+
+#talk_name,
+#talk_email,
+#talk_company {
+    width: 100%;
+    height: 48px;
+    font-family: serif;
+    font-size: 22px;
+    line-height: 22px;
+    padding: 0 10px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+#talk_name:focus,
+#talk_email:focus,
+#talk_company:focus {
+    outline: 0;
+    border-bottom: 1px solid #3a97f5;
+}
+
+#talk_message {
+    width: 100%;
+    height: 96px;
+    font-family: serif;
+    font-size: 22px;
+    padding: 20px;
+}
+
+#talk_message:focus  {
+    outline: 0;
+    border: 1px solid #3a97f5;
+}
+
+.talk_notice {
+    font-family: serif;
+    color: rgb(128, 128, 128);
+    font-size: 18px;
+    margin: 0 0 48px;
+}
+
+.talk_notice a {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#talk_send_btn {
+    width: 100%;
+    height: 84px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+}
+
+.talk_name_eyebrow, 
+.talk_email_eyebrow, 
+.talk_company_eyebrow, 
+.talk_message_eyebrow {
+    font-size: 16px; 
+    font-family: serif; 
+    color:#3a97f5; 
+    line-height: 30px; 
+    display: none;
+ }
+
+.talk_name_require, 
+.talk_email_require, 
+.talk_company_require, 
+.talk_message_require {
+    font-size: 16px; 
+    font-family: serif; 
+    color:#e7185d; 
+    line-height: 30px; 
+    display: none;
+    margin: 10px 0 0;
+ }
+
+ /* Office */
+ #office {
+    width: 100%;
+    height: auto;
+    padding: 100px 0 0;
+ }
+
+ .office_wrap {
+    width: 1712px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(22, 22, 22);
+    
+ }
+
+ .office_item {
+    width: 33.3333%;
+    height: 100%;
+    padding: 100px 40px 30px;
+ }
+
+ .office_name {
+    font-size: 44px;
+    font-weight: 600;
+    margin: 0 0 40px;
+ }
+
+ .office_greeting {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 40px;
+ }
+
+ .office_time {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 40px;
+ }
+
+ .office_tell {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 20px;
+ }
+
+ .office_email {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 20px;
+ }
+
+ /* .office_item svg {
+    width: 30px;
+    fill: white;
+    stroke: #000;
+ } */
+ 
+ .icon_day {
+    width: 35px;
+    fill: white;
+    stroke: #000;
+    stroke-width: 3px;
+ }
+
+ .icon_night {
+    width: 35px;
+    fill: white;
+ }
+
+ .office_icon {
+    margin: 0 0 0 90%;
+ }
+

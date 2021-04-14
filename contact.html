@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huge Inc - Contact</title>
+    
+
+    <link rel="icon" href="img/favicon.png" >
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+</head>
+<body>
+   <header>
+      <nav class="gnb">
+         <div class="gnb_logo_wrap">
+            <svg class="gnb_logo" viewBox="0 0 20 28" xmlns="http://www.w3.org/2000/svg"><path d="M35,24H28V51h7V41h6V51h7V24H41V34H35V24Z" class="gnb_logo_path" transform="translate(-28 -24)"></path></svg>
+         </div>
+      </nav>
+   </header>
+   <main>
+      <section id="hero">
+         <div class="hero_wrap">
+            <h1 id="hero_title" onload="rotate();">Hello.</h1>
+         </div>
+      </section>
+
+      <section id="hello">
+         <div class="hello_wrap">
+            <div class="hello_left">
+               <h3 class="hello_left_index">Hello.</h3>
+            </div>
+            <div class="hello_right">
+               <h2 class="hello_right_title">We're here for you. Say hi.</h2>
+               <ul class="hello_right_box">
+                  <li class="hello_right_box_item">
+                     <p class="hello_right_box_title">Become a Client.</p>
+                     <p class="hello_right_box_call">+1 718 618 4724</p>
+                     <a class="hello_right_box_email" href="#" >business@hugeinc.com</a>
+                  </li>
+                  <li class="hello_right_box_item">
+                     <p class="hello_right_box_title">Media Inquiries.</p>
+                     <p class="hello_right_box_call">+1 718 880 3724</p>
+                     <a class="hello_right_box_email" href="#" >press@hugeinc.com</a>
+                  </li>
+                  <li class="hello_right_box_item">
+                     <p class="hello_right_box_title">Join Huge.
+                        </p>
+                     <p class="hello_right_box_call">+1 718 625 4843
+                        </p>
+                     <a class="hello_right_box_email" href="#" >work@hugeinc.com</a>
+                  </li>
+                  <li class="hello_right_box_item">
+                     <p class="hello_right_box_title">Everything Else.
+                        </p>
+                     <p class="hello_right_box_call">+1 718 625 4843
+                     </p>
+                     <a class="hello_right_box_email" href="#" > hello@hugeinc.com</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </section>
+
+
+      <section id="talk">
+         <div class="talk_wrap">
+            <div class="talk_left">
+               <h3 class="talk_left_index">Let's talk.</h3>
+            </div>
+            <div class="talk_right">
+               <h2 class="talk_right_title">We want to get to<br>know you.</h2>
+               <form action="" id="talk_form">
+                  <div class="talk_input_wrap">
+                     <h4 class="talk_name_eyebrow">Your name</h4>
+                     <input type="text" id="talk_name" name="userName" class="talk_input" placeholder="| Your name" onfocus="talkInputFocus(0);" onblur="talkBlur(0);" oninput="talkChange(0)">
+                     <h4 class="talk_name_require">This is required</h4>
+                  </div>
+
+                  <div class="talk_input_wrap">
+                     <h4 class="talk_email_eyebrow">Your email</h4>
+                     <input type="email" id="talk_email" name="userEmail" class="talk_input"  placeholder="| Your email" onfocus="talkInputFocus(1);" onblur="talkBlur(1);" onchange="talkChange(1)">
+                     <h4 class="talk_email_require">This is required</h4>
+                  </div>
+
+                  <div class="talk_input_wrap">
+                     <h4 class="talk_company_eyebrow">Your company</h4>
+                     <input type="text" id="talk_company" name="userCompany" class="talk_input"  placeholder="| Your company" onfocus="talkInputFocus(2);" onblur="talkBlur(2);" onchange="talkChange(2)">
+                     <h4 class="talk_company_require">This is required</h4>
+                  </div>
+
+                  <div class="talk_input_wrap">
+                     <h4 class="talk_message_eyebrow">Let us know what you're looking for and how we can help.</h4>
+                     <textarea name="userMessage" id="talk_message" class="talk_input" cols="30" rows="2" placeholder="Let us know what you're looking for and how we can help." onfocus="talkInputFocus(3);" onblur="talkBlur(3);" onchange="talkChange(3)"></textarea>
+                     <h4 class="talk_message_require">This is required</h4>
+                  </div>
+
+                  <p class="talk_notice">Please read our <a>Privacy Policy</a> to see how we use your personal information.</p>
+                  <button type="button" id="talk_send_btn" onclick="talkSend()">Send message</button>
+               </form>
+            </div>
+         </div>
+      </section>
+      
+      <section id="office">
+         <ul class="office_wrap">
+            <li class="office_item">
+               <h3 class="office_name">Atlanta.</h3>
+               <h4 class="office_greeting">Ayee.</h4>
+               <p class="office_time"><span id="atl_hour"></span>: <span id="atl_minute"></span> <span id="atl_ampm"></span></p>
+               <p class="office_tell">+1 404 461 9025</p>
+               <p class="office_email">atl@hugeinx.com</p> 
+               <div class="office_icon">
+                  <svg class="icon_night" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+                     <g class="time-sign__night"><path d="M23,39.7764992 C22.0214195,39.9237003 21.0196201,40 20,40 C8.954305,40 0,31.045695 0,20 C0,8.954305 8.954305,0 20,0 C21.0196201,0 22.0214195, 0.0762996568 23,0.223500824 C13.3774738,1.67095159 6,9.97392513 6,20 C6,30.0260749 13.3774738,38.3290484 23,39.7764992 Z"></path></g>
+                  </svg>
+                  <svg class="icon_day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+                     <circle cx="21.5" cy="21.5" r="20" class="time-sign__day"></circle>
+                  </svg>
+               </div>
+               <a href=""></a>
+            </li>
+        
+
+
+            <li class="office_item">
+               <h3 class="office_name">Bogotá.</h3>
+               <h4 class="office_greeting">Hola.</h4>
+               <p class="office_time"><span id="bog_hour"></span>: <span id="bog_minute"></span> <span id="atl_ampm"></span></p>
+               <p class="office_tell">+571 3810606</p>
+               <p class="office_email">bog@hugeinx.com</p>  
+               <div class="office_icon">
+                  <svg class="icon_night" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+                     <g class="time-sign__night"><path d="M23,39.7764992 C22.0214195,39.9237003 21.0196201,40 20,40 C8.954305,40 0,31.045695 0,20 C0,8.954305 8.954305,0 20,0 C21.0196201,0 22.0214195, 0.0762996568 23,0.223500824 C13.3774738,1.67095159 6,9.97392513 6,20 C6,30.0260749 13.3774738,38.3290484 23,39.7764992 Z"></path></g>
+                  </svg>
+                  <svg class="icon_day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+                     <circle cx="21.5" cy="21.5" r="20" class="time-sign__day"></circle>
+                  </svg>
+               </div>
+               <a href=""></a>
+            </li>
+      
+
+
+            <li class="office_item">
+               <h3 class="office_name">Brooklyn.</h3>
+               <h4 class="office_greeting">Yo.</h4>
+               <p class="office_time"><span id="bro_hour"></span>: <span id=bro_minute"></span> <span id="atl_ampm"></span></p>
+               <p class="office_tell">+1 718 625 4843</p>
+               <p class="office_email">bk@hugeinx.com</p>  
+               <div class="office_icon">
+                  <svg class="icon_night" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+                     <g class="time-sign__night"><path d="M23,39.7764992 C22.0214195,39.9237003 21.0196201,40 20,40 C8.954305,40 0,31.045695 0,20 C0,8.954305 8.954305,0 20,0 C21.0196201,0 22.0214195, 0.0762996568 23,0.223500824 C13.3774738,1.67095159 6,9.97392513 6,20 C6,30.0260749 13.3774738,38.3290484 23,39.7764992 Z"></path></g>
+                  </svg>
+                  <svg class="icon_day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
+                     <circle cx="21.5" cy="21.5" r="20" class="time-sign__day"></circle>
+                  </svg>
+               </div>   
+               <a href=""></a>
+            </li>
+         </ul>
+      </section>
+   
+   </main>
+   <footer>
+   </footer>
+
+   <script>
+      // hero title
+      let titleInner = ["Hello.", "Hola.", "Ayo.", "Ei.", "Ello.", "Ola.", "Bueno.", "안녕." ];
+      let titleInnerNum = 0;
+
+      function titleChange() {
+         titleInnerNum++;
+         if (titleInnerNum >= titleInner.length) { titleInnerNum = 0;}
+
+            document.querySelector('#hero_title').innerHTML = titleInner[titleInnerNum];
+         
+      }
+
+     let titleI = setInterval(titleChange, 1500); 
+
+      // Talk Form Focus
+      function talkInputFocus(target) {
+         
+         if (target == 0) {
+         
+            document.querySelectorAll('.talk_name_eyebrow')[0].style = "display: block;";
+            document.getElementById('talk_name').placeholder = "";
+
+         } else if (target == 1) {
+
+            document.querySelectorAll('.talk_email_eyebrow')[0].style = "display: block;";
+            document.getElementById('talk_email').placeholder = "";
+         } else if (target == 2) {
+
+            document.querySelectorAll('.talk_company_eyebrow')[0].style = "display: block;";
+            document.getElementById('talk_company').placeholder = "";
+         } else {
+            document.querySelectorAll('.talk_message_eyebrow')[0].style = "display: block;";
+            document.getElementById('talk_message').placeholder = "";
+         }
+
+
+      }
+
+        // Talk Form Blur
+      function talkBlur(target) {
+         if (target == 0 ) {
+            if (document.getElementById('talk_name').value == "") {
+            
+               document.querySelector('.talk_name_eyebrow').style = "display: none;";
+               document.getElementById('talk_name').placeholder = "| Your name";
+
+            } else if (document.getElementById('talk_name').value.length < 2) {
+               document.querySelector('.talk_name_require').style.display = "block";
+               document.getElementById('talk_name').style.borderBottomColor = "#e7185d";
+               document.querySelector('.talk_name_eyebrow').style = "display: block; color: #e7185d";
+            }
+
+            else {
+               document.querySelector('.talk_name_eyebrow').style.color = "rgb(0,0,0)";
+            }
+         } 
+         
+         if (target == 1) {
+            if (document.getElementById('talk_email').value == "") {
+            
+            document.querySelector('.talk_email_eyebrow').style = "display: none;";
+            document.getElementById('talk_email').placeholder = "| Your email";
+
+            }else {
+               document.querySelector('.talk_email_eyebrow').style.color = "rgb(0,0,0)";
+            }
+         }
+         
+         if (target == 2) {
+            if (document.getElementById('talk_company').value == "") {
+            
+            document.querySelector('.talk_company_eyebrow').style = "display: none;";
+            document.getElementById('talk_company').placeholder = "| Your company";
+
+            }else {
+               document.querySelector('.talk_company_eyebrow').style.color = "rgb(0,0,0)";
+            }
+         } 
+
+         if (target == 3) {
+            if (document.getElementById('talk_message').value == "") {
+            
+            document.querySelector('.talk_message_eyebrow').style = "display: none;";
+            document.getElementById('talk_message').placeholder = "| Let us know what you're looking for and how we can help.";
+
+            }else {
+               document.querySelector('.talk_message_eyebrow').style.color = "rgb(0,0,0)";
+            }
+         }
+         
+      }
+
+      function talkSend() {
+
+         var isCheck = true;
+
+         // 사용자 입력 값에 문제가 있을 때
+
+         // Name 입력 값 체크
+
+         if (document.getElementById('talk_name').value == "") {
+            document.querySelector('.talk_name_require').style.display = "block";
+            document.getElementById('talk_name').style.borderBottomColor = "#e7185d";
+            isCheck = false;
+         }
+
+         if (document.getElementById('talk_email').value == "") {
+            document.querySelector('.talk_email_require').style.display = "block";
+            document.getElementById('talk_email').style.borderBottomColor = "#e7185d";
+            isCheck = false;
+         }
+
+         if (document.getElementById('talk_company').value == "") {
+            document.querySelector('.talk_company_require').style.display = "block";
+            document.getElementById('talk_company').style.borderBottomColor = "#e7185d";
+            isCheck = false;
+         }
+
+         if (document.getElementById('talk_message').value == "") {
+            document.querySelector('.talk_message_require').style.display = "block";
+            document.getElementById('talk_message').style.borderColor = "#e7185d";
+            isCheck = false;
+         }
+
+         // 사용자 입력 값이 모두 정상일 때
+         if (isCheck ) {
+         document.querySelector('.talk_right_title').innerHTML = "Thanks for reaching out! We'll get back to you as soon as possible.";
+         document.getElementById('talk_form').style = "display: none;"
+         }
+
+         isCheck = true;
+      }
+
+      function talkChange(target) {
+
+         // 첫 번째 Input 요소만 input 이벤트
+         if (target == 0 && document.getElementById('talk_name').value.length > 1) {
+            document.querySelector('.talk_name_require').style.display = "none";
+            document.getElementById('talk_name').style.borderBottomColor = "rgb(0,0,0,0.6)";
+         } 
+         
+         // 나머지 Input 요소들에는 change 이벤트
+         else if (target == 1 ) {
+            document.querySelector('.talk_email_require').style.display = "none";
+            document.getElementById('talk_email').style.borderBottomColor = "rgb(0,0,0,0.6)";
+         } else if (target == 2 ) {
+            document.querySelector('.talk_company_require').style.display = "none";
+            document.getElementById('talk_company').style.borderBottomColor = "rgb(0,0,0,0.6)";
+         } else {
+            document.querySelector('.talk_message_require').style.display = "none";
+            document.getElementById('talk_message').style.borderColor = "rgb(0,0,0,0.6)";
+         }
+      }
+
+      // office time
+      //브라우저 시간
+      var presentTime = new Date();
+      //세계표준시간
+      var utcHour = presentTime.getUTCHours();
+      var utcMinute = presentTime.getUTCMinutes();
+
+      // 도시별 시간으로 계산
+      var atlHour = utcHour - 10 + 1;
+      var atlAmPm;
+      if (atlHour < 0) {
+         atlHour += 24;
+      }
+
+
+      //ampm 결정
+      if (atlHour >= 12) {
+         atlAmPm = "PM";
+      } else {
+         atlAmPm = "AM";
+      }
+
+      if (atlHour > 12 ) {
+         atlHour -= 12;
+      }
+
+      //도시별 시간을 화면에 표시
+      document.getElementById('atl_hour').innerHTML = atlHour;
+      document.getElementById('atl_minute').innerHTML = utcMinute;
+      document.getElementById('atl_ampm').innerHTML = atlAmPm;
+
+      // 화면 색상 및 아이콘 변경
+      if (atlHour >= 9 && atlHour <= 18) {
+         document.getElementsByClassName('office_item')[0].style.backgroundColor = "rgb(255,255,255)";
+         document.getElementsByClassName('office_item')[0].style.color = "rgb(0,0,0)";
+         document.getElementsByClassName('icon_night')[0].style.display = "none";
+         document.getElementsByClassName('icon_day')[0].style.display = "block";
+      } 
+      else {
+         document.getElementsByClassName('office_item')[0].style.backgroundColor = "rgb(0,0,0)";
+         document.getElementsByClassName('office_item')[0].style.color = "rgb(255,255,255)";
+         document.getElementsByClassName('icon_night')[0].style.display = "block";
+         document.getElementsByClassName('icon_day')[0].style.display = "none";
+      }
+   </script>
+</body>
+</html>
